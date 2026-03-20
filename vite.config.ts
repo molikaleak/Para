@@ -40,6 +40,7 @@ export default defineConfig({
     })
   ],
   server: {
+    allowedHosts: true,
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
@@ -51,11 +52,7 @@ export default defineConfig({
   preview: {
     port: process.env.PORT ? parseInt(process.env.PORT) : 4173,
     host: true,
-    allowedHosts: [
-      'para-app-production.up.railway.app',
-      'localhost',
-      '.up.railway.app'
-    ],
+    allowedHosts: true,
     proxy: {
       '/api': {
         target: 'http://localhost:3001',
