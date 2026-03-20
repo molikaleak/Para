@@ -8,9 +8,11 @@
     "mock": "json-server --watch mock/db.json --port 3001",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "concurrently \"npm run mock\" \"npm run preview -- --port $PORT --host\""
   },
   "dependencies": {
+    "concurrently": "^9.1.2",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "lucide-react": "^0.577.0",
