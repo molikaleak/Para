@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0a1514;
+  --color-surface-low: #131e1c;
+  --color-surface-high: #212c2b;
+  --color-surface-highest: #2c3736;
+  --color-primary: #9dd2bb;
+  --color-primary-container: #285a48;
+  --color-on-primary: #003828;
+  --color-secondary: #8bd5b9;
+  --color-secondary-container: #005c45;
+  --color-on-surface: #d9e5e3;
+  --color-on-surface-variant: #c0c9c3;
+  --color-error: #ffb4ab;
+  
+  --font-plus: "Plus Jakarta Sans", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+:root {
+  background-color: #0a1514;
+  color: #d9e5e3;
+  font-family: var(--font-manrope);
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-plus);
+}
+
+/* Global Focus Styles */
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-primary-container);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(44, 55, 54, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Industrial Input Style */
+.industrial-input {
+  background-color: #2c3736;
+  border: none;
+  border-left: 0px solid #9dd2bb;
+  transition: border-left 0.2s ease-in-out;
+}
+
+.industrial-input:focus {
+  outline: none;
+  border-left-width: 4px;
+}
+
+/* Hide scrollbar for clean UI */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
