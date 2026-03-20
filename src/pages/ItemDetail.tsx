@@ -85,7 +85,7 @@ const ItemDetail = () => {
               <h2 className="text-xl font-bold font-display">Technical Specifications</h2>
             </div>
             <div className="space-y-3">
-              {Object.entries(item.specs).map(([key, value]: [string, any]) => (
+              {Object.entries(item.specs as Record<string, string>).map(([key, value]) => (
                 <div key={key} className="flex justify-between items-center bg-surface-low/50 p-4 rounded-xl">
                   <span className="text-on-surface-variant font-medium">{key}</span>
                   <span className="text-on-surface font-bold">{value}</span>

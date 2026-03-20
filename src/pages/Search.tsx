@@ -28,7 +28,7 @@ const Search = () => {
       if (query) addRecentSearch(query);
     }, 400);
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, addRecentSearch]);
 
   const { data: items, error, isLoading } = useSWR(
     ['/items', debouncedQuery, location, category],
@@ -111,7 +111,7 @@ const Search = () => {
             Failed to load results. Try checking your connection.
           </div>
         ) : items?.length > 0 ? (
-          items.map((item: any) => (
+          items.map((item: { id: string; name: string; brand: string; location: string; stock: number; status: string; image?: string }) => (
             <ItemCard 
               key={item.id} 
               {...item} 

@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { Home, Search, User } from 'lucide-react';
-import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 const BottomNav = () => {

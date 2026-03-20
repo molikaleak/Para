@@ -1,5 +1,5 @@
 
-import { Camera, X, Upload, CheckCircle2, Loader2, Search } from 'lucide-react';
+import { Camera, X, Upload, CheckCircle2, Loader2 } from 'lucide-react';
 import { useSearchStore } from '../store/searchStore';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';

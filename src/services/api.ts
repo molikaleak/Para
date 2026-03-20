@@ -11,7 +11,7 @@ export const fetcher = async (url: string) => {
 
 export const api = {
   get: (url: string) => fetcher(url),
-  post: async (url: string, data: any) => {
+  post: async (url: string, data: unknown) => {
     const res = await fetch(`${BASE_URL}${url}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

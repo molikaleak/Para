@@ -3,9 +3,19 @@ import { useNavigate } from 'react-router-dom';
 import useSWR from 'swr';
 import { api } from '../services/api';
 
+interface HistoryEntry {
+  id: string;
+  timestamp: string;
+  time: string;
+  type: string;
+  title: string;
+  description: string;
+  severity: string;
+}
+
 const Insights = () => {
   const navigate = useNavigate();
-  const { data: history, isLoading } = useSWR('/history', () => api.get('/history'));
+  const { data: history, isLoading } = useSWR<HistoryEntry[]>('/history', () => api.get('/history'));
 
   return (
     <div className="p-8 max-w-lg mx-auto bg-surface min-h-screen pb-24">
@@ -27,8 +37,8 @@ const Insights = () => {
           Array(4).fill(0).map((_, i) => (
             <div key={i} className="h-24 bg-surface-low rounded-2xl animate-pulse" />
           ))
-        ) : history?.length > 0 ? (
-          history.map((entry: any) => (
+        ) : (history?.length ?? 0) > 0 ? (
+          history!.map((entry) => (
             <div 
               key={entry.id}
               className="bg-surface-low/50 rounded-2xl p-6 flex gap-5 border border-surface-high/20"
