@@ -1,8 +1,11 @@
 [phases.setup]
 nixPkgs = ["nodejs_22"]
 
+[variables]
+NIXPACKS_NODE_VERSION = "22"
+
 [phases.install]
-cmds = ["npm install --include=dev --force"]
+cmds = ["rm -rf node_modules package-lock.json && npm install --include=dev"]
 
 [phases.build]
 cmds = ["npm run build"]
