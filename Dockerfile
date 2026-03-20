@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 
 # Install ALL dependencies (including dev for build tools)
-RUN npm install --include=dev
+RUN npm install --include=dev --legacy-peer-deps
 
 # Copy source code
 COPY . .
@@ -22,7 +22,7 @@ WORKDIR /app
 
 # Copy package files and install all deps (vite needed for preview, json-server for API)
 COPY package.json package-lock.json* ./
-RUN npm install --include=dev
+RUN npm install --include=dev --legacy-peer-deps
 
 # Copy built output from builder stage
 COPY --from=builder /app/dist ./dist
