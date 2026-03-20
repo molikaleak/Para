@@ -34,4 +34,4 @@ COPY mock ./mock
 EXPOSE ${PORT:-4173}
 
 # Start json-server in background, wait for it, then serve the built app
-CMD ["sh", "-c", "json-server --watch mock/db.json --port 3001 & sleep 2 && npx vite preview --port $PORT --host"]
+CMD ["sh", "-c", "npx json-server --watch mock/db.json --port 3001 & sleep 2 && npx vite preview --port $PORT --host"]
