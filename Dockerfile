@@ -30,6 +30,9 @@ COPY --from=builder /app/dist ./dist
 # Copy mock data (needed for json-server at runtime)
 COPY mock ./mock
 
+# Copy the vite config so the preview server knows about allowedHosts
+COPY --from=builder /app/vite.config.ts ./
+
 # Expose the port Railway assigns
 EXPOSE ${PORT:-4173}
 
