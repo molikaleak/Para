@@ -16,7 +16,7 @@ const Home = () => {
   };
 
   return (
-    <div className="p-6 max-w-lg mx-auto">
+    <div className="p-6 max-w-lg md:max-w-5xl md:mx-0 md:pl-12 w-full mx-auto">
       <header className="mb-10 pt-10">
         <h1 className="text-4xl font-bold font-display text-on-surface mb-2">
           Hello, {user?.name.split(' ')[0]}

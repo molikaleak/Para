@@ -13,7 +13,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-surface text-on-surface font-manrope pb-24">
+      <div className="min-h-screen bg-surface text-on-surface font-manrope pb-24 md:pb-0 md:pl-64 w-full">
         <Routes>
           <Route path="/login" element={!isAuthenticated ? <Login /> : <Navigate to="/" />} />
           <Route path="/" element={isAuthenticated ? <Home /> : <Navigate to="/login" />} />

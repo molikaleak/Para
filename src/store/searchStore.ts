@@ -5,9 +5,10 @@ interface SearchState {
   query: string;
   location: string;
   category: string;
+  stockStatus: string;
   recentSearches: string[];
   setQuery: (q: string) => void;
-  setFilters: (filters: { location?: string; category?: string }) => void;
+  setFilters: (filters: { location?: string; category?: string; stockStatus?: string }) => void;
   addRecentSearch: (q: string) => void;
   clearFilters: () => void;
 }
@@ -18,6 +19,7 @@ export const useSearchStore = create<SearchState>()(
       query: '',
       location: '',
       category: '',
+      stockStatus: '',
       recentSearches: [],
       setQuery: (query) => set({ query }),
       setFilters: (filters) => {
@@ -29,7 +31,7 @@ export const useSearchStore = create<SearchState>()(
       })),
       clearFilters: () => {
         console.log('Clearing filters');
-        set({ location: '', category: '' });
+        set({ location: '', category: '', stockStatus: '' });
       },
     }),
     {

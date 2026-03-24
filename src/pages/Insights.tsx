@@ -18,7 +18,7 @@ const Insights = () => {
   const { data: history, isLoading } = useSWR<HistoryEntry[]>('/history', () => api.get('/history'));
 
   return (
-    <div className="p-8 max-w-lg mx-auto bg-surface min-h-screen pb-24">
+    <div className="p-8 max-w-lg md:max-w-5xl md:mx-0 md:pl-12 bg-surface min-h-screen pb-24 md:pb-8 w-full mx-auto">
       <header className="flex items-center gap-4 mb-10 pt-4">
         <button 
           onClick={() => navigate('/')}
@@ -48,7 +48,7 @@ const Insights = () => {
                 {entry.type === 'STOCK_MOVE' && <History size={22} />}
                 {entry.type === 'SYSTEM' && <Bell size={22} />}
               </div>
-              <div className="space-y-1">
+              <div className="space-y-1 flex-1 w-full">
                 <div className="flex items-center justify-between gap-4">
                   <h3 className="font-bold font-display text-on-surface leading-none">{entry.title}</h3>
                   <span className="text-[10px] font-bold text-on-surface-variant whitespace-nowrap bg-surface-high px-2 py-1 rounded">

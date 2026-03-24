@@ -11,6 +11,7 @@ interface FilterSheetProps {
 const FilterSheet = ({ isOpen, onClose }: FilterSheetProps) => {
   const location = useSearchStore((state) => state.location);
   const category = useSearchStore((state) => state.category);
+  const stockStatus = useSearchStore((state) => state.stockStatus);
   const setFilters = useSearchStore((state) => state.setFilters);
   const clearFilters = useSearchStore((state) => state.clearFilters);
 
@@ -77,6 +78,30 @@ const FilterSheet = ({ isOpen, onClose }: FilterSheetProps) => {
                   <div className="flex items-center gap-2">
                     {cat === category && <Check size={14} />}
                     {cat}
+                  </div>
+                </button>
+              ))}
+            </div>
+          </section>
+
+          {/* Stock Status Selection */}
+          <section>
+            <label className="text-primary text-[10px] font-bold tracking-widest uppercase mb-4 block">
+              Stock Status
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {['Out of Stock', 'Low Stock', 'Available'].map((status) => (
+                <button
+                  key={status}
+                  onClick={() => setFilters({ stockStatus: status === stockStatus ? '' : status })}
+                  className={twMerge(
+                    "px-4 py-3 rounded-xl font-bold text-sm transition-all border-none focus:outline-none",
+                    status === stockStatus ? "bg-primary text-on-primary" : "bg-surface-low text-on-surface-variant"
+                  )}
+                >
+                  <div className="flex items-center gap-2">
+                    {status === stockStatus && <Check size={14} />}
+                    {status}
                   </div>
                 </button>
               ))}

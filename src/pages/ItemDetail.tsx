@@ -14,7 +14,7 @@ const ItemDetail = () => {
   if (error || !item) return <div className="p-8 text-center text-error">Asset not found.</div>;
 
   return (
-    <div className="pb-20 max-w-lg mx-auto bg-surface min-h-screen">
+    <div className="pb-20 md:pb-8 max-w-lg md:max-w-5xl md:mx-0 md:pl-12 bg-surface min-h-screen w-full mx-auto">
       {/* Hero Image Section */}
       <div className="relative h-[45vh] w-full bg-surface-high">
         <img 

@@ -4,11 +4,11 @@
       "id": "1",
       "name": "DEWALT DCD996B 20V MAX",
       "brand": "DEWALT",
-      "location": "Zone B → Rack 3 → Shelf 2 → Bin 04",
+      "location": "ឃ្លាំង សែនសុខ (Sen Sok Warehouse) → ជួរទី B → ធ្នើរទី ៣",
       "stock": 12,
       "status": "In Stock",
       "category": "Power Tools",
-      "image": "https://images.unsplash.com/photo-1504148455328-c115456f8f53?q=80&w=300&auto=format&fit=crop",
+      "image": "https://loremflickr.com/300/300/tools,construction?lock=11",
       "specs": {
         "Voltage": "20V",
         "Max Power": "820 UWO",
@@ -20,41 +20,141 @@
       "id": "2",
       "name": "Circuit Breaker 32A",
       "brand": "Schneider",
-      "location": "Zone B → Rack 3 → Shelf 2",
+      "location": "ឃ្លាំង ទួលគោក (Toul Kork Warehouse) → ជួរទី ៥ → ប្រអប់ ០២",
       "stock": 3,
       "status": "Low Stock",
       "category": "Electrical",
-      "image": "https://images.unsplash.com/photo-1558449028-b53a39d100fc?q=80&w=300&auto=format&fit=crop"
+      "image": "https://loremflickr.com/300/300/hardware?lock=22"
     },
     {
       "id": "3",
       "name": "XDT13Z Impact Driver",
       "brand": "Makita",
-      "location": "Zone A → Rack 1 → Shelf 5",
+      "location": "ឃ្លាំង ភ្នំពេញថ្មី (Phnom Penh Thmey) → ផ្នែកកណ្តាល → ធ្នើរទី ៥",
       "stock": 8,
       "status": "In Stock",
       "category": "Power Tools",
-      "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=300&auto=format&fit=crop"
+      "image": "https://loremflickr.com/300/300/drill?lock=33"
     },
     {
       "id": "4",
       "name": "M18 Fuel Hammer",
       "brand": "Milwaukee",
-      "location": "Zone C → Rack 2 → Shelf 1",
+      "location": "ឃ្លាំង ច្បារអំពៅ (Chbar Ampov) → ជួរទី C → ធ្នើរទី ១",
       "stock": 0,
       "status": "Out of Stock",
       "category": "Power Tools",
-      "image": "https://images.unsplash.com/photo-1495033041221-591ec4d90708?q=80&w=300&auto=format&fit=crop"
+      "image": "https://loremflickr.com/300/300/hammer,tool?lock=44"
     },
     {
       "id": "5",
       "name": "Safety Helmet - Arctic White",
       "brand": "3M",
-      "location": "Zone D → Rack 4 → Shelf 3",
+      "location": "ឃ្លាំង ទួលគោក (Toul Kork Warehouse) → តំបន់សុវត្ថិភាព → ជួរ A",
       "stock": 25,
       "status": "In Stock",
       "category": "Safety",
-      "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=300&auto=format&fit=crop"
+      "image": "https://loremflickr.com/300/300/helmet,construction?lock=55"
+    },
+    {
+      "id": "6",
+      "name": "Laser Measure 165ft",
+      "brand": "Bosch",
+      "location": "ឃ្លាំង មេគង្គ (Mekong Storage) → បន្ទប់ A2 → ធ្នើរទី ១",
+      "stock": 14,
+      "status": "In Stock",
+      "category": "Measurement",
+      "image": "https://loremflickr.com/300/300/measurement,tool?lock=66"
+    },
+    {
+      "id": "7",
+      "name": "Angle Grinder 4-1/2\"",
+      "brand": "Metabo",
+      "location": "ឃ្លាំង សែនសុខ (Sen Sok Warehouse) → ជួរទី B → ធ្នើរទី ៤",
+      "stock": 5,
+      "status": "Low Stock",
+      "category": "Power Tools",
+      "image": "https://loremflickr.com/300/300/grinder,tool?lock=77"
+    },
+    {
+      "id": "8",
+      "name": "Work Gloves - Kevlar",
+      "brand": "Mechanix",
+      "location": "ឃ្លាំង ស្ទឹងមានជ័យ (Steung Meanchey) → តំបន់សុវត្ថិភាព → ជួរ ២",
+      "stock": 42,
+      "status": "In Stock",
+      "category": "Safety",
+      "image": "https://loremflickr.com/300/300/gloves,safety?lock=88"
+    },
+    {
+      "id": "9",
+      "name": "High-Vis Vest XXL",
+      "brand": "Caterpillar",
+      "location": "ឃ្លាំង ច្បារអំពៅ (Chbar Ampov) → បន្ទប់ D → ប្រអប់ ៣១",
+      "stock": 18,
+      "status": "In Stock",
+      "category": "Safety",
+      "image": "https://loremflickr.com/300/300/vest,construction?lock=99"
+    },
+    {
+      "id": "10",
+      "name": "Rotary Hammer 1\"",
+      "brand": "Hilti",
+      "location": "ឃ្លាំង ភ្នំពេញថ្មី (Phnom Penh Thmey) → ជួរទី C → ធ្នើរទី ៤",
+      "stock": 2,
+      "status": "Low Stock",
+      "category": "Power Tools",
+      "image": "https://loremflickr.com/300/300/equipment,industrial?lock=10"
+    },
+    {
+      "id": "11",
+      "name": "LED Work Light 2000LM",
+      "brand": "Husky",
+      "location": "ឃ្លាំង ទួលគោក (Toul Kork Warehouse) → ជួរទី B → ប្រអប់ទី ៥២",
+      "stock": 0,
+      "status": "Out of Stock",
+      "category": "Lighting",
+      "image": "https://loremflickr.com/300/300/light,industrial?lock=111"
+    },
+    {
+      "id": "12",
+      "name": "Concrete Saw 14\"",
+      "brand": "Stihl",
+      "location": "ឃ្លាំង មេគង្គ (Mekong Storage) → បន្ទប់ C1 → ធ្នើរទី ១",
+      "stock": 4,
+      "status": "Low Stock",
+      "category": "Heavy Equipment",
+      "image": "https://loremflickr.com/300/300/saw,construction?lock=121"
+    },
+    {
+      "id": "13",
+      "name": "Digital Multimeter",
+      "brand": "Fluke",
+      "location": "ឃ្លាំង សែនសុខ (Sen Sok Warehouse) → ជួរទី A → ធ្នើរទី ៥",
+      "stock": 11,
+      "status": "In Stock",
+      "category": "Measurement",
+      "image": "https://loremflickr.com/300/300/multimeter,tool?lock=131"
+    },
+    {
+      "id": "14",
+      "name": "Pneumatic Nailer",
+      "brand": "Bostitch",
+      "location": "ឃ្លាំង ស្ទឹងមានជ័យ (Steung Meanchey) → បន្ទប់ទី ២ → ធ្នើរទី ២",
+      "stock": 7,
+      "status": "In Stock",
+      "category": "Air Tools",
+      "image": "https://loremflickr.com/300/300/nailer,tool?lock=141"
+    },
+    {
+      "id": "15",
+      "name": "Wire Stripper 8-22 AWG",
+      "brand": "Klein Tools",
+      "location": "ឃ្លាំង ច្បារអំពៅ (Chbar Ampov) → ជួរទី ៣ → ប្រអប់ទី ០៤",
+      "stock": 35,
+      "status": "In Stock",
+      "category": "Hand Tools",
+      "image": "https://loremflickr.com/300/300/wire,hardware?lock=151"
     }
   ],
   "users": [
@@ -71,8 +171,8 @@
       "timestamp": "2026-03-20T02:42:00Z",
       "time": "09:42 AM",
       "type": "SKU_UPDATE",
-      "title": "SKU Normalization",
-      "description": "Sector 7-B: 42 structural items updated with new identifier format.",
+      "title": "ប្រតិបត្តិការស្តុក ភ្នំពេញ",
+      "description": "ឃ្លាំងភ្នំពេញថ្មី៖ ឧបករណ៍សំណង់ ៤២ មុខត្រូវបានធ្វើបច្ចុប្បន្នភាពលេខកូដថ្មីរួចរាល់។",
       "severity": "info"
     },
     {
@@ -80,8 +180,8 @@
       "timestamp": "2026-03-20T03:15:00Z",
       "time": "10:15 AM",
       "type": "STOCK_MOVE",
-      "title": "Stock Relocation",
-      "description": "DEWALT inventory bulk-moved from Zone A to Zone B for optimization.",
+      "title": "ការផ្លាស់ប្តូរទីតាំងស្តុក",
+      "description": "ឧបករណ៍ DEWALT ត្រូវបានរើពី ឃ្លាំងទួលគោក ទៅ ឃ្លាំងសែនសុខ។",
       "severity": "success"
     },
     {
@@ -89,8 +189,8 @@
       "timestamp": "2026-03-20T04:05:00Z",
       "time": "11:05 AM",
       "type": "SYSTEM",
-      "title": "Auto-Categorization",
-      "description": "System automatically re-tagged 23 electrical components in Zone C.",
+      "title": "ការបែងចែកប្រភេទស្វ័យប្រវត្តិ",
+      "description": "ប្រព័ន្ធបានចាត់ថ្នាក់សម្ភារៈអគ្គិសនីចំនួន ២៣ ឡើងវិញនៅឃ្លាំងស្ទឹងមានជ័យ។",
       "severity": "info"
     }
   ],

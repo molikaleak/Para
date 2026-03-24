@@ -5,7 +5,7 @@ const Account = () => {
   const { user, logout } = useAuthStore();
 
   return (
-    <div className="p-8 max-w-lg mx-auto bg-surface min-h-screen">
+    <div className="p-8 max-w-lg md:max-w-5xl md:mx-0 md:pl-12 bg-surface min-h-screen w-full mx-auto">
       <header className="mb-12 pt-8 text-center md:text-left">
         <h1 className="text-3xl font-bold font-display text-on-surface mb-2">Account Settings</h1>
         <p className="text-on-surface-variant">Manage your warehouse profile</p>

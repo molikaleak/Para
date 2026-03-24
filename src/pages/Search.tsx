@@ -15,6 +15,7 @@ const Search = () => {
   const setQuery = useSearchStore((state) => state.setQuery);
   const location = useSearchStore((state) => state.location);
   const category = useSearchStore((state) => state.category);
+  const stockStatus = useSearchStore((state) => state.stockStatus);
   const addRecentSearch = useSearchStore((state) => state.addRecentSearch);
   const [debouncedQuery, setDebouncedQuery] = useState(query);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
@@ -31,12 +32,12 @@ const Search = () => {
   }, [query, addRecentSearch]);
 
   const { data: items, error, isLoading } = useSWR(
-    ['/items', debouncedQuery, location, category],
-    () => searchService.searchItems({ q: debouncedQuery, location, category })
+    ['/items', debouncedQuery, location, category, stockStatus],
+    () => searchService.searchItems({ q: debouncedQuery, location, category, stockStatus })
   );
 
   return (
-    <div className="p-6 max-w-lg mx-auto min-h-screen">
+    <div className="p-6 max-w-lg md:max-w-5xl md:mx-0 md:pl-12 min-h-screen w-full mx-auto">
       <header className="flex items-center gap-4 mb-8 pt-4">
         <button 
           onClick={() => navigate('/')}
@@ -75,7 +76,7 @@ const Search = () => {
               onClick={() => setIsFilterOpen(true)}
               className={clsx(
                 "text-on-surface-variant active:text-primary transition-colors",
-                (location || category) && "text-primary"
+                (location || category || stockStatus) && "text-primary"
               )}
             >
               <Filter size={24} />
@@ -85,7 +86,7 @@ const Search = () => {
       </div>
 
       {/* Active Filters */}
-      {(location || category) && (
+      {(location || category || stockStatus) && (
         <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
           {location && (
             <div className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-lg text-primary text-xs font-bold whitespace-nowrap">
@@ -97,11 +98,16 @@ const Search = () => {
               CAT: {category}
             </div>
           )}
+          {stockStatus && (
+            <div className="px-3 py-1 bg-primary/10 border border-primary/20 rounded-lg text-primary text-xs font-bold whitespace-nowrap">
+              STOCK: {stockStatus}
+            </div>
+          )}
         </div>
       )}
 
       {/* Results */}
-      <div className="space-y-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
         {isLoading ? (
           Array(3).fill(0).map((_, i) => (
             <div key={i} className="h-64 bg-surface-low rounded-3xl animate-pulse" />

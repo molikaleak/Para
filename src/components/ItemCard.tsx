@@ -30,7 +30,7 @@ const ItemCard = ({ name, brand, location, stock, status, image, onClick }: Item
     >
       <div className="relative h-48 w-full bg-surface-high">
         {image ? (
-          <img src={image} alt={name} className="w-full h-full object-cover opacity-80" />
+          <img src={image} alt={name} className="w-full h-full object-cover object-center scale-105 opacity-90 transition-transform duration-500 group-hover:scale-110" />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
             <ClipboardList size={48} className="text-on-surface-variant/20" />
@@ -59,20 +59,10 @@ const ItemCard = ({ name, brand, location, stock, status, image, onClick }: Item
           </button>
         </div>
 
-        <div className="flex items-center gap-2 text-on-surface-variant text-sm mb-6">
+        <div className="flex items-center gap-2 text-on-surface-variant text-sm mb-0">
           <MapPin size={14} className="text-primary" />
           <span className="truncate">{location}</span>
         </div>
-
-        <button 
-          onClick={(e) => {
-            e.stopPropagation();
-            // Handle request
-          }}
-          className="w-full h-12 bg-surface-highest rounded-xl text-primary font-bold text-sm tracking-wide uppercase flex items-center justify-center gap-2 group transition-all"
-        >
-          Request Item
-        </button>
       </div>
     </div>
   );
