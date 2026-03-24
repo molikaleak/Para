@@ -1,28 +1,59 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface: #0a1514;
-  --color-surface-low: #131e1c;
-  --color-surface-high: #212c2b;
-  --color-surface-highest: #2c3736;
-  --color-primary: #9dd2bb;
-  --color-primary-container: #285a48;
-  --color-on-primary: #003828;
-  --color-secondary: #8bd5b9;
-  --color-secondary-container: #005c45;
-  --color-on-surface: #d9e5e3;
-  --color-on-surface-variant: #c0c9c3;
-  --color-error: #ffb4ab;
+  --color-surface: var(--surface);
+  --color-surface-low: var(--surface-low);
+  --color-surface-high: var(--surface-high);
+  --color-surface-highest: var(--surface-highest);
+  --color-primary: var(--primary);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-error: var(--error);
   
   --font-plus: "Plus Jakarta Sans", sans-serif;
   --font-manrope: "Manrope", sans-serif;
 }
 
 :root {
-  background-color: #0a1514;
-  color: #d9e5e3;
+  /* LIGHT MODE (Default) */
+  --surface: #f4f8f7;
+  --surface-low: #ffffff;
+  --surface-high: #e9eeed;
+  --surface-highest: #dfe5e4;
+  --primary: #126b54;
+  --primary-container: #9dd2bb;
+  --on-primary: #ffffff;
+  --secondary: #276953;
+  --secondary-container: #8bd5b9;
+  --on-surface: #19201e;
+  --on-surface-variant: #404947;
+  --error: #ba1a1a;
+  
+  background-color: var(--surface);
+  color: var(--on-surface);
   font-family: var(--font-manrope);
   -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  /* DARK MODE */
+  --surface: #0a1514;
+  --surface-low: #131e1c;
+  --surface-high: #212c2b;
+  --surface-highest: #2c3736;
+  --primary: #9dd2bb;
+  --primary-container: #285a48;
+  --on-primary: #003828;
+  --secondary: #8bd5b9;
+  --secondary-container: #005c45;
+  --on-surface: #d9e5e3;
+  --on-surface-variant: #c0c9c3;
+  --error: #ffb4ab;
 }
 
 h1, h2, h3, h4, .font-display {
@@ -41,17 +72,17 @@ h1, h2, h3, h4, .font-display {
 
 /* Glassmorphism utility */
 .glass {
-  background: rgba(44, 55, 54, 0.6);
+  background: color-mix(in srgb, var(--color-surface-highest), transparent 40%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
 /* Industrial Input Style */
 .industrial-input {
-  background-color: #2c3736;
+  background-color: var(--color-surface-highest);
   border: none;
-  border-left: 0px solid #9dd2bb;
-  transition: border-left 0.2s ease-in-out;
+  border-left: 0px solid var(--color-primary);
+  transition: border-left 0.2s ease-in-out, background-color 0.3s ease;
 }
 
 .industrial-input:focus {

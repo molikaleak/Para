@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from './store/authStore';
+import { useThemeStore } from './store/themeStore';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Search from './pages/Search';
@@ -10,6 +12,15 @@ import BottomNav from './components/BottomNav';
 
 function App() {
   const { isAuthenticated } = useAuthStore();
+  const { theme } = useThemeStore();
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [theme]);
 
   return (
     <Router>
