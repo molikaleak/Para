@@ -34,11 +34,8 @@ const Login = () => {
   return (
     <div className="min-h-screen p-8 flex flex-col justify-center max-w-lg mx-auto bg-surface">
       <div className="mb-12">
-        <label className="text-primary text-xs font-bold tracking-widest uppercase mb-2 block font-display">
-          Para Systems
-        </label>
-        <h1 className="text-4xl font-bold font-display text-on-surface leading-tight mb-4">
-          Verdant Terminal
+        <h1 className="text-4xl font-bold font-display text-on-surface leading-tight mb-4 text-primary">
+          DBD Search
         </h1>
         <p className="text-on-surface-variant text-lg font-manrope">
           Secure Warehouse Access Control

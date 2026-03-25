@@ -2,13 +2,14 @@
   "items": [
     {
       "id": "1",
-      "name": "DEWALT DCD996B 20V MAX",
+      "name": "DEWALT DCD996B 20V MAX Drill",
       "brand": "DEWALT",
+      "model": "DCD996B",
       "location": "ឃ្លាំង សែនសុខ (Sen Sok Warehouse) → ជួរទី B → ធ្នើរទី ៣",
       "stock": 12,
       "status": "In Stock",
       "category": "Power Tools",
-      "image": "https://loremflickr.com/300/300/tools,construction?lock=11",
+      "image": "https://cdn.britannica.com/42/100742-050-F50E6B5F/circuit-switch-battery-lamp.jpg",
       "specs": {
         "Voltage": "20V",
         "Max Power": "820 UWO",
@@ -18,33 +19,35 @@
     },
     {
       "id": "2",
-      "name": "Circuit Breaker 32A",
-      "brand": "Schneider",
+      "name": "Legrand Surface mounting socket",
+      "brand": "Legrand",
+      "model": "32A 555-59",
       "location": "ឃ្លាំង ទួលគោក (Toul Kork Warehouse) → ជួរទី ៥ → ប្រអប់ ០២",
       "stock": 3,
       "status": "Low Stock",
       "category": "Electrical",
-      "image": "https://loremflickr.com/300/300/hardware?lock=22"
+      "image": "https://assets.legrand.com/pim/PHOTOS-WEB/LEGRAND/61/LG-617641-WEB-R.jpg"
     },
     {
       "id": "3",
-      "name": "XDT13Z Impact Driver",
-      "brand": "Makita",
+      "name": "Industrial Plug Socket",
+      "brand": "Schneider",
+      "model": "IP67 32A",
       "location": "ឃ្លាំង ភ្នំពេញថ្មី (Phnom Penh Thmey) → ផ្នែកកណ្តាល → ធ្នើរទី ៥",
       "stock": 8,
       "status": "In Stock",
       "category": "Power Tools",
-      "image": "https://loremflickr.com/300/300/drill?lock=33"
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/2/WI/IN/KZ/29819987/legrand-industrial-plug-socket.jpg"
     },
     {
       "id": "4",
-      "name": "M18 Fuel Hammer",
-      "brand": "Milwaukee",
+      "name": "White UPVC",
+      "brand": "any",
       "location": "ឃ្លាំង ច្បារអំពៅ (Chbar Ampov) → ជួរទី C → ធ្នើរទី ១",
       "stock": 0,
       "status": "Out of Stock",
       "category": "Power Tools",
-      "image": "https://loremflickr.com/300/300/hammer,tool?lock=44"
+      "image": "https://5.imimg.com/data5/PC/RK/MY-69187183/upvc-double-glazed-windows.jpg"
     },
     {
       "id": "5",
@@ -54,57 +57,57 @@
       "stock": 25,
       "status": "In Stock",
       "category": "Safety",
-      "image": "https://loremflickr.com/300/300/helmet,construction?lock=55"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ6LLMb5USaWAMBUF051-8_0iG34bgCyPC7A&s"
     },
     {
       "id": "6",
-      "name": "Laser Measure 165ft",
-      "brand": "Bosch",
+      "name": "Flame Retardant UPVC Conduit 50mm",
+      "brand": "Any",
       "location": "ឃ្លាំង មេគង្គ (Mekong Storage) → បន្ទប់ A2 → ធ្នើរទី ១",
       "stock": 14,
       "status": "In Stock",
       "category": "Measurement",
-      "image": "https://loremflickr.com/300/300/measurement,tool?lock=66"
+      "image": "https://azenergy-eg.com/wp-content/uploads/2021/07/100.027-rotated.jpg"
     },
     {
       "id": "7",
-      "name": "Angle Grinder 4-1/2\"",
-      "brand": "Metabo",
+      "name": "CPVC Pipe 1/2 inch",
+      "brand": "Any",
       "location": "ឃ្លាំង សែនសុខ (Sen Sok Warehouse) → ជួរទី B → ធ្នើរទី ៤",
       "stock": 5,
       "status": "Low Stock",
       "category": "Power Tools",
-      "image": "https://loremflickr.com/300/300/grinder,tool?lock=77"
+      "image": "https://www.defpipe.com/wp-content/uploads/2022/09/5-CPVC-Pipes-ASTM-SCH40-and-SCH80.jpg"
     },
     {
       "id": "8",
-      "name": "Work Gloves - Kevlar",
-      "brand": "Mechanix",
+      "name": "PVC-U Water Pipe and Fittings",
+      "brand": "Any",
       "location": "ឃ្លាំង ស្ទឹងមានជ័យ (Steung Meanchey) → តំបន់សុវត្ថិភាព → ជួរ ២",
       "stock": 42,
       "status": "In Stock",
       "category": "Safety",
-      "image": "https://loremflickr.com/300/300/gloves,safety?lock=88"
+      "image": "https://kh.lesso.com/uploads/20230419/95b061fef53ed6aaf845bb6d80ab5564.png"
     },
     {
       "id": "9",
-      "name": "High-Vis Vest XXL",
-      "brand": "Caterpillar",
+      "name": "PVC Corrugated Conduit Pipe",
+      "brand": "Any",
       "location": "ឃ្លាំង ច្បារអំពៅ (Chbar Ampov) → បន្ទប់ D → ប្រអប់ ៣១",
       "stock": 18,
       "status": "In Stock",
       "category": "Safety",
-      "image": "https://loremflickr.com/300/300/vest,construction?lock=99"
+      "image": "https://www.ctube-gr.com/wp-content/uploads/2024/03/IEC-pvc-corrugated-conduit-pipe.jpg"
     },
     {
       "id": "10",
-      "name": "Rotary Hammer 1\"",
-      "brand": "Hilti",
+      "name": "Joinfworld Outdoor Electrical Junction Box",
+      "brand": "Any",
       "location": "ឃ្លាំង ភ្នំពេញថ្មី (Phnom Penh Thmey) → ជួរទី C → ធ្នើរទី ៤",
       "stock": 2,
       "status": "Low Stock",
       "category": "Power Tools",
-      "image": "https://loremflickr.com/300/300/equipment,industrial?lock=10"
+      "image": "https://m.media-amazon.com/images/I/719yzjIuGpL.jpg"
     },
     {
       "id": "11",
@@ -114,27 +117,27 @@
       "stock": 0,
       "status": "Out of Stock",
       "category": "Lighting",
-      "image": "https://loremflickr.com/300/300/light,industrial?lock=111"
+      "image": "https://www.eaton.com/content/dam/eaton/products/conduit-cable-and-wire-management/crouse-hinds/images/crouse-hinds-weatherproof-boxes.jpg"
     },
     {
       "id": "12",
       "name": "Concrete Saw 14\"",
-      "brand": "Stihl",
+      "brand": "Any",
       "location": "ឃ្លាំង មេគង្គ (Mekong Storage) → បន្ទប់ C1 → ធ្នើរទី ១",
       "stock": 4,
       "status": "Low Stock",
       "category": "Heavy Equipment",
-      "image": "https://loremflickr.com/300/300/saw,construction?lock=121"
+      "image": "https://m.media-amazon.com/images/I/616iy1bYX8L.jpg"
     },
     {
       "id": "13",
       "name": "Digital Multimeter",
-      "brand": "Fluke",
+      "brand": "Any",
       "location": "ឃ្លាំង សែនសុខ (Sen Sok Warehouse) → ជួរទី A → ធ្នើរទី ៥",
       "stock": 11,
       "status": "In Stock",
       "category": "Measurement",
-      "image": "https://loremflickr.com/300/300/multimeter,tool?lock=131"
+      "image": "https://gw.alicdn.com/imgextra/i2/1983858386/O1CN01G7oRj42Boq4XOVsBi_!!1983858386.jpg_540x540.jpg"
     },
     {
       "id": "14",
@@ -144,7 +147,7 @@
       "stock": 7,
       "status": "In Stock",
       "category": "Air Tools",
-      "image": "https://loremflickr.com/300/300/nailer,tool?lock=141"
+      "image": "https://static1.industrybuying.com/products/electrical/electrical-panels-distribution-box/junction-boxes/ELE.JUN.633212381_1748421692049.webp"
     },
     {
       "id": "15",
@@ -154,14 +157,14 @@
       "stock": 35,
       "status": "In Stock",
       "category": "Hand Tools",
-      "image": "https://loremflickr.com/300/300/wire,hardware?lock=151"
+      "image": "https://hubbellcdn.com/prodimage515/BELL_5361-1_PRODIMAGE_45DEG_515.webp"
     }
   ],
   "users": [
     {
       "id": "1",
-      "name": "Marcus Chen",
-      "email": "marcus@para.com",
+      "name": "Victor ",
+      "email": "Victor@para.com",
       "phone": "+1234567890"
     }
   ],

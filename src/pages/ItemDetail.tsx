@@ -35,7 +35,7 @@ const ItemDetail = () => {
 
         <div className="absolute bottom-8 left-8 right-8">
           <span className="text-primary text-xs font-bold tracking-[0.2em] uppercase mb-2 block">
-            {item.brand}
+            {item.brand} {item.model ? `| ${item.model}` : ''}
           </span>
           <h1 className="text-3xl font-bold font-display text-on-surface leading-tight">
             {item.name}

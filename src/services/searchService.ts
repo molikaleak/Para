@@ -8,19 +8,37 @@ export interface SearchParams {
 }
 
 export const searchService = {
-  searchItems: ({ q, location, category, stockStatus }: SearchParams) => {
-    let url = '/items?';
-    if (q) url += `q=${q}&`;
-    if (location) url += `location_like=${location}&`;
-    if (category) url += `category=${category}&`;
+  searchItems: async ({ q, location, category, stockStatus }: SearchParams) => {
+    let data = await api.get('/items');
     
-    if (stockStatus) {
-      if (stockStatus === 'Out of Stock') url += 'stock=0&';
-      if (stockStatus === 'Low Stock') url += 'stock_lte=10&stock_gt=0&';
-      if (stockStatus === 'Available') url += 'stock_gt=0&';
+    if (q) {
+      const lowerQ = q.toLowerCase();
+      data = data.filter((item: any) => 
+        item.name?.toLowerCase().includes(lowerQ) || 
+        item.id?.includes(lowerQ) || 
+        item.brand?.toLowerCase().includes(lowerQ) ||
+        item.model?.toLowerCase().includes(lowerQ)
+      );
     }
     
-    return api.get(url);
+    if (location) {
+      data = data.filter((item: any) => item.location?.includes(location));
+    }
+    
+    if (category) {
+      data = data.filter((item: any) => item.category === category);
+    }
+    
+    if (stockStatus) {
+      data = data.filter((item: any) => {
+        if (stockStatus === 'Out of Stock') return item.stock === 0;
+        if (stockStatus === 'Low Stock') return item.stock > 0 && item.stock <= 10;
+        if (stockStatus === 'Available') return item.stock > 0;
+        return true;
+      });
+    }
+    
+    return data;
   },
   getItem: (id: string) => {
     return api.get(`/items/${id}`);

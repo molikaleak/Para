@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
-        name: 'Para Warehouse',
-        short_name: 'Para',
+        name: 'DBD Warehouse',
+        short_name: 'DBD',
         description: 'Industrial Warehouse Inventory Search System',
         theme_color: '#0a1514',
         background_color: '#0a1514',
