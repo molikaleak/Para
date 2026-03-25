@@ -1,5 +1,5 @@
 
-import { useSearchStore } from '../store/searchStore';
+import { useSearchStore, type ItemData } from '../store/searchStore';
 import { useNavigate } from 'react-router-dom';
 import { Search, ClipboardList } from 'lucide-react';
 import ItemCard from '../components/ItemCard';
@@ -38,7 +38,7 @@ const Home = () => {
         <h2 className="text-sm font-bold text-on-surface-variant mb-4 pl-1">Recently Viewed</h2>
         <div className="flex gap-3 overflow-x-auto pb-2 snap-x pr-6 -mr-6 pl-1 pt-1 no-scrollbar">
           {recentItems && recentItems.length > 0 ? (
-            recentItems.map((item: any) => (
+            recentItems.map((item: ItemData) => (
               <div 
                 key={item.id}
                 onClick={() => navigate(`/item/${item.id}`)}
@@ -85,7 +85,7 @@ const Home = () => {
               </div>
             ))
           ) : items && items.length > 0 ? (
-            items.map((item: any) => (
+            items.map((item: ItemData) => (
               <ItemCard 
                 key={item.id} 
                 {...item} 

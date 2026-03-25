@@ -1,6 +1,6 @@
 
 import useSWR from 'swr';
-import { useSearchStore } from '../store/searchStore';
+import { useSearchStore, type ItemData } from '../store/searchStore';
 import { searchService } from '../services/searchService';
 import ItemCard from '../components/ItemCard';
 import FilterSheet from '../components/FilterSheet';
@@ -32,7 +32,7 @@ const Search = () => {
       }
     }, 400);
     return () => clearTimeout(timer);
-  }, [query]);
+  }, [query, addRecentSearch]);
 
   const { data: items, error, isLoading } = useSWR(
     ['/items', debouncedQuery, location, category, stockStatus],
@@ -163,7 +163,7 @@ const Search = () => {
                 key={item.id} 
                 {...item} 
                 onClick={() => {
-                  addRecentItem(item as any);
+                  addRecentItem(item as unknown as ItemData);
                   navigate(`/item/${item.id}`);
                 }}
               />
